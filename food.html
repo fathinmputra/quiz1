@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fathin Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="toggle" onclick="toggleMenu();"></div>
+    <div class="navbar">
+        <ul class="menu">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Homepage</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="profile.html">Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="hometown.html">Hometown</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="food.html">Local Food</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="tourist.html">Tourist Places</a>
+            </li>
+        </ul>
+    </div>
+    <section class="food" id="food">
+        <div class="title">
+            <h2>Local Food</h2>
+            <br>
+        </div>
+        <div class="content">
+            <div class="foodBx">
+                <div class="imgBx">
+                    <img src="images/seblak.jpg">
+                </div>
+                <div class="textBx">
+                    <h3>Seblak</h3>
+                </div>
+            </div>
+            <div class="foodBx">
+                <div class="imgBx">
+                    <img src="images/batagor.jpg">
+                </div>
+                <div class="textBx">
+                    <h3>Batagor</h3>
+                </div>
+            </div>
+            <div class="title">
+                <p>The local food in Bandung is incredibly diverse, with a wide array of mouthwatering options to explore. For instance, some notable examples include "seblak," a spicy and savory snack made from various ingredients; "batagor," a delightful combination of fried fish dumplings and tofu; "mie kocok," a hearty noodle soup with tender beef; and "lotek," a refreshing salad with peanut sauce. These dishes showcase the rich culinary heritage of Bandung and offer a delicious taste of the city's culinary diversity.
+                </p>
+            </div>
+            <div class="foodBx">
+                <div class="imgBx">
+                    <img src="images/miekocok.jpg">
+                </div>
+                <div class="textBx">
+                    <h3>Mie Kocok</h3>
+                </div>
+            </div>
+            <div class="foodBx">
+                <div class="imgBx">
+                    <img src="images/Lotek.jpg">
+                </div>
+                <div class="textBx">
+                    <h3>Lotek</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- JavaScript Implementation -->
+    <script>
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.toggle');
+            const navbar = document.querySelector('.navbar');
+            menuToggle.classList.toggle('active');
+            navbar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

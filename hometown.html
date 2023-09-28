@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fathin Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="toggle" onclick="toggleMenu();"></div>
+    <div class="navbar">
+        <ul class="menu">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Homepage</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="profile.html">Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="hometown.html">Hometown</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="food.html">Local Food</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="tourist.html">Tourist Places</a>
+            </li>
+        </ul>
+    </div>
+    <section class="hometown" id="about">
+        <div class="title">
+            <h2>Hometown</h2>
+        </div>
+        <div class="content">
+            <div class="imgBx">
+                <img src="images/gedungsate.jpeg">
+            </div>
+            <div class="textBx">
+                <h1>BANDUNG</h1>
+                <p>Bandung, often referred to as the "Paris of Java," is a vibrant city nestled in the heart of Indonesia. This bustling metropolis is renowned for its picturesque landscapes, cool mountainous climate, and a rich cultural heritage. With a diverse blend of art, fashion, and cuisine, Bandung offers a unique fusion of modernity and tradition. Visitors are captivated by its charming colonial architecture, lush tea plantations, and bustling markets. 
+                    <br>
+                    <br>
+                    As a hub of creativity and education, Bandung boasts numerous universities and creative communities, making it a dynamic center for innovation and youth culture. Whether you're exploring its historic sites, savoring its culinary delights, or immersing yourself in its artistic scene, Bandung promises a captivating experience that reflects the essence of Indonesia's diversity.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript Implementation -->
+    <script>
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.toggle');
+            const navbar = document.querySelector('.navbar');
+            menuToggle.classList.toggle('active');
+            navbar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fathin Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="toggle" onclick="toggleMenu();"></div>
+    <section class="banner" id="home">
+
+        <div class="homepageContent">
+            <div>
+                <h4><span>Welcome to My Website !!</h4>
+                <h2>I am Fathin Muhashibi Putra.</h2>
+                <br>
+                <a href="profile.html" class="button">Let's Check My Profile!</a>
+            </div>
+            <ul class="socialmedia">
+                <li><a href="https://www.linkedin.com/in/fathinmp"><img src="images/linkedin.png"></a></li>
+                <li><a href="https://github.com/fathinmputra"><img src="images/github.png"></a></li>
+                <li><a href="https://gitlab.com/fathinmputra"><img src="images/gitlab.png"></a></li>
+                <li><a href="https://instagram.com/fathin_mp"><img src="images/instagram.png"></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="navbar">
+        <ul class="menu">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Homepage</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="profile.html">Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="hometown.html">Hometown</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="food.html">Local Food</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="tourist.html">Tourist Places</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- JavaScript Implementation -->
+    <script>
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.toggle');
+            const navbar = document.querySelector('.navbar');
+            menuToggle.classList.toggle('active');
+            navbar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

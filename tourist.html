@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fathin Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="toggle" onclick="toggleMenu();"></div>
+    <div class="navbar">
+        <ul class="menu">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Homepage</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="profile.html">Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="hometown.html">Hometown</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="food.html">Local Food</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="tourist.html">Tourist Places</a>
+            </li>
+        </ul>
+    </div>
+    <section class="tourist" id="tourist">
+        <div class="title">
+            <h2>Tourist Places</h2>
+        </div>
+        <div class="content">
+            <div class="touristBx">
+                <div class="imgBx">
+                    <img src="images/braga.jpg">
+                </div>
+                <div class="textBx">
+                    <h3>Braga</h3>
+                </div>
+            </div>
+            <div class="touristBx">
+                <div class="imgBx">
+                    <img src="images/tangkubanperahu.png">
+                </div>
+                <div class="textBx">
+                    <h3>Gunung Tangkuban Perahu</h3>
+                </div>
+            </div>
+            <div class="title">
+                <p>Bandung offers a wide range of tourist attractions, with plenty of places to visit. For example, some popular destinations include "Braga," a historic street known for its old buildings and lively atmosphere; "Gunung Tangkuban Perahu," an active volcano where you can see amazing views of the crater; "Tebing Keraton," a beautiful cliff area that overlooks a lush valley; and "Kawah Putih," a unique volcanic crater lake with stunning turquoise water. These attractions highlight the city's diverse natural beauty, rich history, and vibrant culture, making Bandung an appealing destination for tourists.</p>
+            </div>
+            <div class="touristBx">
+                <div class="imgBx">
+                    <img src="images/tebingkeraton.jpg">
+                </div>
+                <div class="textBx">
+                    <h3>Tebing Keraton</h3>
+                </div>
+            </div>
+            <div class="touristBx">
+                <div class="imgBx">
+                    <img src="images/kawahputih.jpg">
+                </div>
+                <div class="textBx">
+                    <h3>Kawah Putih</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript Implementation -->
+    <script>
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.toggle');
+            const navbar = document.querySelector('.navbar');
+            menuToggle.classList.toggle('active');
+            navbar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
